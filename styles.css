@@ -553,3 +553,29 @@ nav a:hover {
     display: flex;
     flex-direction: column;
 }
+
+/* FOOTER SECTION */
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-socials a img {
+    width: 45px;
+    height: 45px;
+    transition: transform 0.2s;
+    margin: 0;
+}
+
+.footer-socials a:hover img {
+    transform: scale(1.1);
+}
