@@ -611,15 +611,15 @@ nav a:hover {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 6px;
-    background-color: #3b82f6;
-    color: #111;
+    background-color: #5a5a5a;
+    color: #ffffff;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
 .newsletter-form button:hover {
-    background-color: #2563eb;
+    background-color: #bebebe;
 
 }
 
