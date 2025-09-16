@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a sample news site">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="Images/TBN.png" width="150px" />
+            </div>
+            <ul class="nav-dropdown">
+                <li class="dropdown">
+                    <a class="dropbtn" href="#">News ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#">Local News</a>
+                        <a href="#">Global News</a>
+                        <a href="#">Local Crime</a>
+                        <a href="#">Global Crime</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- Gör så att search bar blir mindre ju mindre skärmen blir -->
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Type here..." />
+                <button class="search-button">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e3e3e3">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="nav-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Subscription</a>
+            </div>
+            <button class="log-in-btn">Login</button>
+            <button class="sign-up-btn">Sign Up</button>
+            <!-- Gör language button till en dropdown meny med olika språk att välja på -->
+            <div class="language-dropdown">
+                <button class="language-btn">
+                    <svg class="language-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                        fill="#e3e3e3">
+                        <path
+                            d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+                    </svg>
+                </button>
+
+                <ul class="dropdown-menu-lang">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Swedish</a></li>
+                    <li><a href="#">Finnish</a></li>
+                    <li><a href="#">Norwegian</a></li>
+                    <li><a href="#">Danish</a></li>
+                    <li><a href="#">Icelandic</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="batman-wrapper">
+            <!-- Prova hitta några småbilder som man kan ha bredvid för att göra länkarna lite mer intressanta -->
+            <aside class="sidebar">
+                <h3 id="sidebar-title">Today's News</h3>
+                <a href="#" class="sidebar-links">
+                    <img src="Images/nightwing.jpg" alt="Nightwing" class="sidebar-thumbnail">Nightwing roaming around Skärholmen trying to decrease crime rates.</a>
+                <a href="#" class="sidebar-links">
+                    <img src="Images/batgirl.jpg" alt="Batgirl" class="sidebar-thumbnail">Batgirl roaming around Hallunda trying to decrease crime rates.</a>
+                <a href="#" class="sidebar-links">
+                    <img src="Images/catwoman.jpg" alt="Catwoman" class="sidebar-thumbnail">Catwoman spotted at House of Jewelry in Stockholm.</a>
+            </aside>
+
+            <section class="batman-section">
+                <article id="batman-left">
+                    <h2 class="title">Batman spotted in <span class="title-highlight">Stockholm</span></h2>
+                    <p class="subtitle">Batman has been spotted in Gamla Stan stopping criminals trying to smuggle in
+                        drugs, weapons and also human trafficking.</p>
+                    <a class="read-more-news">Read more about it here</a>
+                </article>
+
+                <div class="batman-images">
+                    <img src="Images/batmayn.jpg" id="batman-img-one" />
+                    <!-- <img src="batmantwo.jpg" id="batman-img-two" />  kommenterat ut den medan jag provar olika sätt att få bra plats med sidebar och allt annat-->
+                </div>
+
+            </section>
+        </div>
+        <section class="Redhood-section">
+            <div class="redhood-images">
+                <img src="Images/redhood.jpg" id="redhood-img-one" />
+                <img src="Images/redhoodtwo.jpg" id="redhood-img-two" />
+            </div>
+
+            <article id="redhood-right">
+                <h2 class="title">Red Hood spotted in <span class="title-highlight" id="redhood-title">Stockholm</span>
+                </h2>
+                <p class="subtitle">Red hood spotted in Rinkeby violently stopping criminals doing drug deals, there are
+                    about 30 people dead from gunshot wounds.</p>
+                <a class="read-more-news">Read more about it here</a>
+            </article>
+        </section>
+
+        <section class="robin-section">
+            <article id="robin-left">
+                <h2 class="title">Robin spotted in <span class="title-highlight" id="robin-title">Stockholm</span>
+                </h2>
+                <p class="subtitle">Robin spotted in Gamla Stan with Batman, he seems to have had some sort of mental breakdown
+                    which made him lash out in anger, there are about 50 people dead from fatal wounds from a bladed weapon.</p>
+                <a class="read-more-news">Read more about it here</a>
+            </article>
+
+            <div class="robin-images">
+                <img src="Images/damianrobin.jpg" id="robin-img-one" />
+                <img src="Images/damianrobintwo.jpg" id="robin-img-two" />
+            </div>
+
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
