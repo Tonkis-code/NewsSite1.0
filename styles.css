@@ -185,6 +185,7 @@ nav a:hover {
     background: #f9f9f9;
     border-radius: 6px;
     transition: background 0.3s;
+    cursor: pointer;
 }
 
 .log-in-btn:hover {
@@ -199,6 +200,7 @@ nav a:hover {
     background: #303030;
     border-radius: 6px;
     transition: background 0.3s;
+    cursor: pointer;
 }
 
 .sign-up-btn:hover {
