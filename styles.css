@@ -556,17 +556,84 @@ nav a:hover {
 
 /* FOOTER SECTION */
 
+.site-footer {
+    background-color: rgb(203, 203, 203);
+    color: #f3f4f6;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-grid h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 0.25rem;
+}
+
+.footer-grid a {
+    display: block;
+    color: #111;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s;
+}
+
+.footer-grid a:hover {
+    color: #3b82f6;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.newsletter-form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #3b82f6;
+    color: #111;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.newsletter-form button:hover {
+    background-color: #2563eb;
+
+}
+
 .footer-socials {
     display: flex;
     gap: 1rem;
-    font-size: 1.5rem;
-    margin-top: 1rem;
+    align-items: center;
 }
 
 .footer-socials a {
     display: flex;
     align-items: center;
     text-decoration: none;
+    justify-content: center;
 }
 
 .footer-socials a img {
@@ -578,4 +645,11 @@ nav a:hover {
 
 .footer-socials a:hover img {
     transform: scale(1.1);
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #51545a;
 }
